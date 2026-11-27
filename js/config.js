@@ -27,7 +27,7 @@ const RKO_CONFIG = {
         // 1 место: Озон Банк (РКО + Регистрация ИП/ООО 0 ₽)
         ozon: {
             name: "Озон Банк (Ozon Бизнес)",
-            partnerUrl: "https://t.fincpanetwork.ru/click/61172/955?erid=2W5zFHPj8YH",
+            partnerUrl: "https://t.fincpanetwork.ru/click/61172/417?erid=2W5zFHbppTA",
             partnerRegUrl: "https://t.fincpanetwork.ru/click/61172/955?erid=2W5zFHPj8YH",
             bonusText: "0 ₽ обслуживание навсегда + до 14,1% на остаток и бесплатная онлайн-бухгалтерия",
             monthlyFee: "0 ₽ навсегда без условий",
