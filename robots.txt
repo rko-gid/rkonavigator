@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /leads.json
+Disallow: /server.py
+
+# После привязки домена раскомментируйте и укажите ваш реальный адрес:
+Sitemap: https://rkonavigator.ru/sitemap.xml
