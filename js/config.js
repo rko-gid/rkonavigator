@@ -116,7 +116,7 @@ const RKO_CONFIG = {
         // 9 место: Банк «Санкт-Петербург» (СПб и ЛО, Москва, Калининград, Новосибирск)
         bspb: {
             name: "Банк «Санкт-Петербург» (БСПБ)",
-            partnerUrl: "https://leads.su/click/demo_bspb",
+            partnerUrl: "https://t.fincpanetwork.ru/click/61172/591?erid=2W5zFH4SETs",
             bonusText: "Выездной сервис 0 ₽ + бизнес-карта 0 ₽ и спецтарифы по ВЭД (СПб и ЛО, Москва, Калининград, Новосибирск)",
             monthlyFee: "0 ₽ первые месяцы",
             limitFreeCash: "До 150 000 ₽ / мес 0%",
