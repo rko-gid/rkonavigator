@@ -104,16 +104,25 @@ function initPartnerLinksAndTracking() {
             }
 
             if (baseUrl) {
+                // Защита для офферов со строгими правилами по источникам (БСПБ):
+                // Если пользователь пришел из соцсетей или контекста, не передаем эти метки в ссылку БСПБ
+                let effectiveSubId = subIdValue;
+                let effectiveCampaign = utmCampaign;
+                if (bankKey === "bspb") {
+                    effectiveSubId = "site_showcase";
+                    effectiveCampaign = "organic";
+                }
+
                 let separator = baseUrl.includes("?") ? "&" : "?";
                 let finalUrl = baseUrl;
                 if (baseUrl.includes("leads.su")) {
-                    finalUrl = `${baseUrl}${separator}aff_sub1=${subIdValue}&aff_sub2=${utmCampaign}`;
+                    finalUrl = `${baseUrl}${separator}aff_sub1=${effectiveSubId}&aff_sub2=${effectiveCampaign}`;
                 } else if (baseUrl.includes("admitad.com")) {
-                    finalUrl = `${baseUrl}${separator}subid=${subIdValue}&subid1=${utmCampaign}`;
+                    finalUrl = `${baseUrl}${separator}subid=${effectiveSubId}&subid1=${effectiveCampaign}`;
                 } else if (baseUrl.includes("pampadu.ru")) {
-                    finalUrl = `${baseUrl}${separator}partner_id=${subIdValue}`;
+                    finalUrl = `${baseUrl}${separator}partner_id=${effectiveSubId}`;
                 } else {
-                    finalUrl = `${baseUrl}${separator}sub1=${subIdValue}&sub2=${utmCampaign}`;
+                    finalUrl = `${baseUrl}${separator}sub1=${effectiveSubId}&sub2=${effectiveCampaign}`;
                 }
 
                 btn.setAttribute("href", finalUrl);
