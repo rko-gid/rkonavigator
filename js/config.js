@@ -15,7 +15,7 @@ const RKO_CONFIG = {
     siteUrl: "https://rkonavigator.ru",
 
     // 2. Идентификатор счетчика Яндекс.Метрики (замените на ваш номер)
-    yandexMetrikaId: "12345678",
+    yandexMetrikaId: "114728691",
 
     // 3. Контакты и Telegram
     telegramChannelUrl: "https://t.me/fin_konsult_2026",
