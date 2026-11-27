@@ -85,7 +85,7 @@ const RKO_CONFIG = {
         // 6 место: УБРиР (Уральский банк)
         ubrir: {
             name: "УБРиР (Уральский банк)",
-            partnerUrl: "https://leads.su/click/demo_ubrir",
+            partnerUrl: "https://t.fincpanetwork.ru/click/61172/631?erid=2W5zFHvrcYQ",
             bonusText: "3 месяца за 0 ₽ на тарифе «Взлетай» + до 20% кэшбэк на АЗС и розыгрыш 25 000 ₽",
             monthlyFee: "0 ₽ (3 мес за 0 ₽ на «Взлетай»)",
             limitFreeCash: "До 400 000 ₽ / мес 0%",
