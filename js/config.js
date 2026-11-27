@@ -42,7 +42,7 @@ const RKO_CONFIG = {
             name: "Альфа-Банк",
             partnerUrl: "https://t.fincpanetwork.ru/click/61172/338?erid=2W5zFJhpPwv",
             partnerRegUrl: "https://t.fincpanetwork.ru/click/61172/337?erid=2W5zFJerRPE",
-            partnerAcquiringUrl: "https://leads.su/click/demo_alfa_acquiring",
+            partnerAcquiringUrl: "https://trk.ppdu.ru/click/jJPHzSWC?erid=2SDnjcA5Pke&siteId=30797",
             partnerInternetAcquiringUrl: "https://t.fincpanetwork.ru/click/61172/413?erid=2W5zFGtZcRN", // Ссылка на интернет-эквайринг Альфа-Банка
             bonusText: "Торговый эквайринг 1% + 0 ₽ аренда терминалов и до 300 000 ₽ партнерских бонусов",
             monthlyFee: "0 ₽ навсегда без условий",
