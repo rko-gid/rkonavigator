@@ -96,7 +96,7 @@ const RKO_CONFIG = {
         // 7 место: Банк Уралсиб
         uralsib: {
             name: "Банк Уралсиб",
-            partnerUrl: "https://leads.su/click/demo_uralsib",
+            partnerUrl: "https://trk.ppdu.ru/click/L5B7Pw26?erid=2SDnjeEL8mp&siteId=30797",
             bonusText: "Платежки юрлицам всего 19 ₽ + кэшбэк до 7% по бизнес-карте и зарплатный проект за 1 000 ₽/год",
             monthlyFee: "0 ₽ (Тариф «Стартовый»)",
             limitFreeCash: "До 150 000 ₽ / мес 0%",
