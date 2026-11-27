@@ -70,13 +70,14 @@ const RKO_CONFIG = {
             rating: "4.8 / 5.0"
         },
 
-        // 5 место: Точка Банк
+        // 5 место: Точка Банк (РКО + Регистрация бизнеса 0 ₽)
         tochka: {
             name: "Точка Банк",
-            partnerUrl: "https://leads.su/click/demo_tochka",
-            bonusText: "Скидка 80% на 3 мес. + бесплатная онлайн-бухгалтерия (УСН) и до 360 000 ₽ бонусов",
+            partnerUrl: "https://rko-group.ru/s/6wwc7cXX",
+            partnerRegUrl: "https://rko-group.ru/s/hmxBlW4q",
+            bonusText: "Скидка 80% на 3 мес. + онлайн-бухгалтерия (УСН) 0 ₽, эквайринг от 1,14% и бонусы до 360 000 ₽",
             monthlyFee: "0 ₽ на старте / скидка 80%",
-            limitFreeCash: "До 150 000 ₽ / мес 0%",
+            limitFreeCash: "До 1 000 000 ₽ / мес 0%",
             rating: "4.9 / 5.0"
         },
 
