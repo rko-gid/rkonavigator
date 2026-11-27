@@ -27,8 +27,8 @@ const RKO_CONFIG = {
         // 1 место: Озон Банк (РКО + Регистрация ИП/ООО 0 ₽)
         ozon: {
             name: "Озон Банк (Ozon Бизнес)",
-            partnerUrl: "https://leads.su/click/demo_ozon",
-            partnerRegUrl: "https://leads.su/click/demo_ozon_reg",
+            partnerUrl: "https://t.fincpanetwork.ru/click/61172/955?erid=2W5zFHPj8YH",
+            partnerRegUrl: "https://t.fincpanetwork.ru/click/61172/955?erid=2W5zFHPj8YH",
             bonusText: "0 ₽ обслуживание навсегда + до 14,1% на остаток и бесплатная онлайн-бухгалтерия",
             monthlyFee: "0 ₽ навсегда без условий",
             limitFreeCash: "До 3 млн ₽ снятие наличных по бизнес-карте (до 150 000 ₽ СБП 0%)",
@@ -51,7 +51,7 @@ const RKO_CONFIG = {
         // 3 место: ВТБ Бизнес (РКО + Регистрация ИП/ООО 0 ₽ + Эквайринг от 1,3%)
         vtb: {
             name: "ВТБ Бизнес",
-            partnerUrl: "https://leads.su/click/demo_vtb",
+            partnerUrl: "https://rko-group.ru/s/DL6zDPSX",
             partnerRegUrl: "https://leads.su/click/demo_vtb_reg",
             partnerAcquiringUrl: "https://leads.su/click/demo_vtb_acquiring",
             bonusText: "0 ₽ перевод на карту физлица без ограничений + бесплатная регистрация ИП/ООО без госпошлины и ЭДО на 1 год",
@@ -63,7 +63,7 @@ const RKO_CONFIG = {
         // 4 место: СберБизнес (строго для действующего бизнеса старше 30 дней)
         sber: {
             name: "СберБизнес",
-            partnerUrl: "https://leads.su/click/demo_sber",
+            partnerUrl: "https://t.fincpanetwork.ru/click/61172/982",
             bonusText: "0 ₽ платежи внутри Сбера + 300 000 ₽ вывод под 0% (для действующих ИП и ООО со сроком от 30 дней)",
             monthlyFee: "0 ₽ навсегда без условий",
             limitFreeCash: "До 300 000 ₽ / мес 0% на карту Сбера",
@@ -103,7 +103,7 @@ const RKO_CONFIG = {
         // 8 место: Промсвязьбанк (ПСБ)
         psb: {
             name: "Промсвязьбанк (ПСБ)",
-            partnerUrl: "https://leads.su/click/demo_psb",
+            partnerUrl: "https://rko-group.ru/s/4si7uLG3",
             bonusText: "Переводы физлицам до 10 млн ₽ + эквайринг от 0,9% и кэшбэк до 10% по карте",
             monthlyFee: "От 0 ₽ (дистанционное открытие)",
             limitFreeCash: "До 10 млн ₽ 0%",
