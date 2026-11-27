@@ -52,7 +52,7 @@ const RKO_CONFIG = {
         vtb: {
             name: "ВТБ Бизнес",
             partnerUrl: "https://rko-group.ru/s/DL6zDPSX",
-            partnerRegUrl: "https://leads.su/click/demo_vtb_reg",
+            partnerRegUrl: "https://trk.ppdu.ru/click/yb31w90s?erid=Kra23bNL5&siteId=30797",
             partnerAcquiringUrl: "https://leads.su/click/demo_vtb_acquiring",
             bonusText: "0 ₽ перевод на карту физлица без ограничений + бесплатная регистрация ИП/ООО без госпошлины и ЭДО на 1 год",
             monthlyFee: "0 ₽ на старте (3 мес без условий)",
