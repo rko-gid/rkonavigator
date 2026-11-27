@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение тарифов РКО: ТОП банков 2026–2027 — РКО Навигатор 2026–2027</title>
+    <meta name="description" content="Честная таблица сравнения тарифов РКО в ТОП-9 банках России на 2026–2027 год.">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="РКО Навигатор Бизнеса 2026–2027">
+    <meta property="og:title" content="Сравнение тарифов РКО: ТОП банков 2026–2027 — РКО Навигатор 2026–2027">
+    <meta property="og:description" content="Честная таблица сравнения тарифов РКО в ТОП-9 банках России на 2026–2027 год.">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .article-container {
+            max-width: 880px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #e0e6ed;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .article-content h1 { font-size: 32px; margin-bottom: 20px; line-height: 1.3; color: #121619; }
+        .article-content h2 { font-size: 24px; margin: 36px 0 16px; color: #121619; border-bottom: 2px solid #edf2f7; padding-bottom: 8px; }
+        .article-content h3 { font-size: 19px; margin: 24px 0 12px; color: #121619; }
+        .article-content p { font-size: 16px; line-height: 1.8; margin-bottom: 20px; color: #343a40; }
+        .article-content ul, .article-content ol { margin-bottom: 24px; padding-left: 24px; }
+        .article-content li { font-size: 15px; margin-bottom: 8px; line-height: 1.6; color: #343a40; }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; margin-bottom: 24px; color: #1062fe; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .cta-banner {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border: 1px solid #bfdbfe;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .cta-banner h4 { font-size: 18px; margin-bottom: 8px; color: #121619; }
+
+        /* EMBEDDED COMPONENTS CSS */
+        /* =======================================================================
+ * СТИЛИ ДЛЯ ИНФОГРАФИКИ, ТАБЛИЦ И СХЕМ В СТАТЬЯХ (РКО 2026–2027)
+ * ======================================================================= */
+
+/* 1. Пошаговый процесс / Дорожная карта (Roadmap) */
+.roadmap-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 28px 0;
+}
+
+.roadmap-step {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px 24px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.roadmap-step:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+    background: #ffffff;
+}
+
+.roadmap-num {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1062fe 0%, #004ecc 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(16, 98, 254, 0.3);
+}
+
+.roadmap-body {
+    flex: 1;
+}
+
+.roadmap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.roadmap-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.roadmap-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #eff6ff;
+    color: #1062fe;
+    border: 1px solid #bfdbfe;
+}
+
+.roadmap-badge-time {
+    background: #fef3c7;
+    color: #92400e;
+    border-color: #fde68a;
+}
+
+.roadmap-badge-success {
+    background: #dcfce7;
+    color: #166534;
+    border-color: #bbf7d0;
+}
+
+.roadmap-desc {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 0 8px;
+}
+
+.roadmap-details {
+    font-size: 13px;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-top: 8px;
+    border-left: 3px solid #1062fe;
+}
+
+/* 2. Карточки скрытых комиссий и статей расхода */
+.cost-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+    margin: 28px 0;
+}
+
+.cost-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cost-card:hover {
+    border-color: #cbd5e1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.cost-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.cost-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fef2f2;
+    color: #ef4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.cost-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.3;
+}
+
+.cost-rate-badge {
+    display: inline-block;
+    background: #fee2e2;
+    color: #991b1b;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cost-desc {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.cost-trap {
+    font-size: 12px;
+    color: #b91c1c;
+    background: #fff1f2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-left: 3px solid #ef4444;
+    font-weight: 500;
+}
+
+/* 3. Матрица бизнес-моделей (Выбор банка для ИП) */
+.business-matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin: 28px 0;
+}
+
+.model-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.model-card:hover {
+    border-color: #1062fe;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(16, 98, 254, 0.08);
+}
+
+.model-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    width: fit-content;
+}
+
+.model-badge-mp { background: #eff6ff; color: #005BFF; border: 1px solid #bfdbfe; }
+.model-badge-it { background: #f5f3ff; color: #7F42E1; border: 1px solid #ddd6fe; }
+.model-badge-retail { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+.model-badge-b2b { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+
+.model-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 10px;
+}
+
+.model-priority {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.model-banks {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.model-banks-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.model-banks-val {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1062fe;
+    line-height: 1.4;
+}
+
+.model-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #334155;
+}
+
+.model-features li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.model-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: 800;
+}
+
+/* 4. Сетка 7 критериев выбора банка для ООО */
+.criteria-grid-7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+    margin: 28px 0;
+}
+
+.criterion-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
+}
+
+.criterion-card:hover {
+    border-color: #1062fe;
+    box-shadow: 0 6px 16px rgba(16, 98, 254, 0.08);
+    transform: translateY(-2px);
+}
+
+.criterion-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #eff6ff;
+    color: #1062fe;
+    font-weight: 800;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.criterion-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.criterion-desc {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.criterion-metric {
+    font-size: 12px;
+    font-weight: 700;
+    color: #059669;
+    background: #ecfdf5;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* 5. Кнопка перехода в таблицах */
+.btn-table-cta {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #1062fe;
+    color: #ffffff !important;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(16, 98, 254, 0.2);
+    text-align: center;
+}
+
+.btn-table-cta:hover {
+    background: #004ecc;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(16, 98, 254, 0.3);
+}
+
+/* 6. Улучшенные таблицы */
+.styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 24px 0;
+    font-size: 13.5px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.styled-table th {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+    padding: 12px 14px;
+    border-bottom: 2px solid #cbd5e1;
+    border-right: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+.styled-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.styled-table tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+.styled-table tr:hover td {
+    background: #eff6ff;
+}
+
+.styled-table th:last-child,
+.styled-table td:last-child {
+    border-right: none;
+}
+
+.styled-table tr:last-child td {
+    border-bottom: none;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <span class="logo-badge">РКО 2026–2027</span>
+                <span class="logo-text">Навигатор Бизнеса</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#rating">Рейтинг банков</a></li>
+                <li><a href="../index.html#calculator">Калькулятор тарифа</a></li>
+                <li><a href="../index.html#articles">Все статьи</a></li>
+                <li><a href="https://t.me/fin_konsult_2026" class="link-tg-channel" target="_blank" rel="noopener">Telegram 💬</a></li>
+            </ul>
+            <a href="../index.html#calculator" class="header-cta">Подобрать банк ⚡</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="article-container">
+            <a href="../index.html" class="back-link">← Вернуться на главную витрину</a>
+            <article class="article-content">
+                <h1>Сравнение тарифов РКО: ТОП банков для бизнеса в 2026–2027 году</h1>
+<h2>Введение: почему важно сравнивать тарифы РКО в 2026–2027 году</h2>
+<p>Открытие расчетного счета для индивидуального предпринимателя (ИП) или компании (ООО) — ключевое решение, определяющее чистую рентабельность бизнеса. В 2026 году рынок РКО развивается под влиянием налоговых реформ и контроля по 115-ФЗ через платформу ЦБ «Знай своего клиента» (ЗСК).</p>
+<p>Современный расчетный счет — это комплексная экосистема: эквайринг, расчеты через СБП, онлайн-бухгалтерия, интеграции с маркетплейсами и зарплатные проекты. За слоганами «0 рублей за обслуживание» часто скрываются скрытые издержки: комиссии за вывод прибыли ИП (до 10–15%), дорогие платежки (до 199 ₽) или невыгодный эквайринг. Ошибка в выборе банка ежегодно обходится в десятки тысяч рублей. Ниже представлен детальный разбор тарифов лучших банков на основе данных Markswebb и практики предпринимателей.</p>
+<hr>
+<h2>Критерии сравнения банков для бизнеса</h2>
+<p>При сравнении тарифов РКО в 2026–2027 году ключевое значение имеют 7 параметров:</p>
+<ol><li><strong>Абонентская плата.</strong> Бесплатные пакеты оптимальны на старте и при сезонности. Платные тарифы (490–4990 ₽/мес.) окупаются при оборотах за счет включенных опций.</li><li><strong>Стоимость межбанковских платежей.</strong> Внутри банка расчеты бесплатны 24/7. Межбанковские платежи юрлицам стоят от 0 ₽ (безлимит) до 150–199 ₽ сверх лимита.</li><li><strong>Лимиты на вывод дохода ИП.</strong> Беспошлинный вывод дохода ИП на личную карту варьируется от 150 000 ₽ до безлимита. Сверх порога действует повышенный процент.</li><li><strong>Условия эквайринга.</strong> Ставки торгового (0,9%–2,5%) и интернет-эквайринга (1,5%–3,5%), комиссии через СБП (0,4%–0,7%) и скорость зачисления выручки.</li><li><strong>Удобство мобильного банка.</strong> Оценивается рейтингом Markswebb и надежностью приложений.</li><li><strong>Дополнительные сервисы.</strong> Бухгалтерия для УСН, проверка контрагентов («Светофор»), зарплатный проект и модули для маркетплейсов.</li><li><strong>Комплаенс по 115-ФЗ.</strong> Прозрачность комплаенса, скорость решения вопросов и защита бизнеса от блокировок по 115-ФЗ.</li></ol>
+<hr>
+<h2>Большая сравнительная таблица РКО: ТОП банков для бизнеса</h2>
+<div class="table-responsive"><table class="styled-table"><thead><tr><th>Банк</th><th>Бесплатный тариф / Промо</th><th>Платные тарифы (руб./мес.)</th><th>Межбанк юрлицам</th><th>Вывод дохода ИП без %</th><th>Эквайринг (торговый / интернет)</th><th>Рейтинг Markswebb / Оценка</th></tr></thead><tbody><tr><td><strong>Альфа-Банк</strong></td><td>«Уверенный старт» 0 ₽</td><td>1 990 ₽ («Развитие»), 3 990 ₽ («Расчеты»)</td><td>25–50 шт. (далее 39–59 ₽)</td><td><strong>До 300 000 – 2 000 000 ₽</strong></td><td>1,0%–2,3% / 2,4%–3,5%</td><td><strong>1-е место (93,1 балла)</strong> ⭐ 4.8</td></tr><tr><td><strong>Точка</strong></td><td>«Ноль» 0 ₽ (без операций)</td><td>700 ₽ («Начало»), 3 500 ₽ («Развитие»)</td><td><strong>0 ₽ без лимита</strong> (на платных тарифах)</td><td>До 400 000 – 1 000 000 ₽</td><td>1,4%–2,3% / 2,2%–2,8%</td><td>3-е место (71,5 балла) ⭐ 4.9</td></tr><tr><td><strong>Озон Банк</strong></td><td>0 ₽ (2 мес. промо / без оборота)</td><td>490 ₽ («Простой»), 1 990 ₽ («Продвинутый»), 4 990 ₽</td><td>49 ₽ / 29 ₽ / 19 ₽ (внутри банка 0 ₽ 24/7)</td><td>До 150 000 – 500 000 ₽</td><td>от 0,99%–2,3% / от 1,5%–2,4%</td><td>5-е место (59,0 баллов) ⭐ 4.8</td></tr><tr><td><strong>СберБанк</strong></td><td>«Легкий старт» 0 ₽ бессрочно</td><td>1 290 ₽ («Обороты»), 3 990 ₽ («Полным ходом»)</td><td>3 бесплатно (далее 199 ₽) / 15–50 шт. (далее 100 ₽)</td><td>До 300 000 ₽</td><td>1,0%–2,5% / 1,8%–2,5%</td><td>6-е место (56,3 балла) ⭐ 4.5</td></tr><tr><td><strong>ВТБ</strong></td><td>«На старте» 0 ₽ (3 мес. промо)</td><td>1 200 ₽ («Важное»), 2 200 ₽ («Все включено»)</td><td>5 шт. (далее 150 ₽) / 25–60 шт. (далее 35–50 ₽)</td><td><strong>0 ₽ БЕЗ ЛИМИТА</strong> себе на карту ВТБ</td><td>1,3%–2,3% / 1,9%–2,5%</td><td>4-е место (67,5 балла) ⭐ 4.6</td></tr><tr><td><strong>УБРиР</strong></td><td>«Ничего лишнего» / «Взлетай!» 0 ₽</td><td>690 ₽ («Оптимальный»), 4 900 ₽ («Безлимит»)</td><td>19 ₽ («Оптимальный»), <strong>0 ₽ безлимитно</strong> («Безлимит»)</td><td>До 250 000 – 500 000 ₽</td><td>1,25%–2,5% / от 1,65%</td><td>Топ нишевых банков ⭐ 4.7</td></tr><tr><td><strong>Банк Уралсиб</strong></td><td>«Старт» 0 ₽</td><td>1 290 ₽ («Удобный»), 3 490 ₽ («Разумный»)</td><td><strong>19 ₽ за платежку</strong> (самый дешевый межбанк)</td><td>До 150 000 ₽ (кэшбэк до 7%)</td><td>1,4%–2,3% / от 1,8%</td><td>Лучший межбанк ⭐ 4.7</td></tr><tr><td><strong>ПСБ</strong></td><td>«ПСБ Старт» 0 ₽ (при активности)</td><td>1 000 ₽ («Торговля»), 2 490 ₽ («24/7»)</td><td>3 шт. (далее 199 ₽) / 30 шт. (далее 50 ₽)</td><td><strong>До 10 000 000 ₽</strong> на карты физлиц</td><td>0,9%–2,1% / 1,6%–2,3%</td><td><strong>2-е место (92,0 балла)</strong> ⭐ 4.8</td></tr><tr><td><strong>Банк «Санкт-Петербург» (БСПБ)</strong></td><td>«Деловой старт» 0 ₽ первые месяцы</td><td>от 490 ₽ / «Деловой.Комплекс»</td><td>От 25 ₽ (опердень до 20:30)</td><td>До 150 000 ₽ под 0%</td><td>от 1,3% / ВЭД от 0.12%</td><td><strong>Лидер по ВЭД</strong> ⭐ 4.8 (СПб, Мск, Клд, Нск)</td></tr></tbody></table></div>
+<hr>
+<h2>Подробный обзор ТОП банков для бизнеса</h2>
+<h3>1. Альфа-Банк — цифровой флагман с рекордным выводом средств</h3>
+<p>Альфа-Банк лидирует в рейтинге Markswebb (93,1 балла), сочетая надежность с лучшим мобильным интерфейсом.</p>
+<ul><li><strong>Тарифные планы:</strong> «Уверенный старт» — 0 ₽/мес. без условий по оборотам. Платные пакеты «Быстрое развитие» (1 990 ₽/мес., скидка 50% на 6 месяцев) и «Активные расчеты» (3 990 ₽/мес.) включают 25–50 платежей (сверх лимита — 39–59 ₽).</li><li><strong>Вывод средств и эквайринг:</strong> Бесплатный перевод чистой прибыли ИП на карты — <strong>до 2 000 000 ₽ в месяц</strong>, рекорд среди крупных банков. Торговый эквайринг — от 1,0%, интернет-эквайринг — от 2,4% до 3,5%.</li><li><strong>Плюсы:</strong> 1-е место Markswebb, огромный лимит вывода на карту ИП, скидки 50% на обслуживание, развитая сеть Phygital-офисов и банкоматов.</li><li><strong>Минусы:</strong> Дорогой интернет-эквайринг для небольших оборотов, платные платежки сверх пакета.</li><li><strong>Для кого:</strong> Для растущих компаний, оптовиков и ИП с доходом от 500 000 ₽/мес.</li></ul>
+<p>> <strong>Специальное предложение:</strong> Откройте счет в Альфа-Банке онлайн со скидкой 50% на полгода и получите бонусы на развитие до 300 000 ₽.
+> 
+> 👉 <a href="../index.html#rating">Открыть расчетный счет в Альфа-Банке</a></p>
+<hr>
+<h3>2. Банк Точка — лучший сервис и безлимитный межбанк для малого бизнеса</h3>
+<p>Банк Точка занимает 3-е место в рейтинге Markswebb (71,5 балла) с оценкой 4.9, предлагая бесплатный выезд представителя для оформления документов в удобное для вас место и время без посещения банковских отделений.</p>
+<ul><li><strong>Тарифные планы:</strong> «Ноль» — 0 ₽/мес. для новых ИП или без операций. Платные тарифы «Начало» (700 ₽/мес.) и «Развитие» (3 500 ₽/мес.) включают ключевое преимущество: <strong>0 ₽ за межбанковские переводы юрлицам без лимита по количеству</strong>.</li><li><strong>Вывод средств и эквайринг:</strong> Бесплатный перевод средств ИП себе на карту — от 400 000 до 1 000 000 ₽/мес. Торговый эквайринг — от 1,4% до 2,3%, интернет-эквайринг — от 2,2% до 2,8% с моментальным зачислением выручки.</li><li><strong>Плюсы:</strong> Бесплатный безлимитный межбанк на платных тарифах, оперативная живая поддержка за 40 секунд без ботов, встроенная онлайн-бухгалтерия для УСН, удобный валютный контроль.</li><li><strong>Минусы:</strong> Нет физических отделений, поштучная оплата платежек на тарифе «Ноль».</li><li><strong>Для кого:</strong> Для IT-сферы, рекламных агентств, селлеров маркетплейсов и компаний с частыми платежами партнерам.</li></ul>
+<p>> <strong>Специальное предложение:</strong> Откройте счет в Точке со скидкой 80% на первые 3 месяца обслуживания, получите бесплатную встроенную бухгалтерию и бонусы от партнеров до 360 000 ₽.
+> 
+> 👉 <a href="../index.html#rating">Открыть расчетный счет в Банке Точка</a></p>
+<hr>
+<h3>3. Озон Банк (Ozon Бизнес) — универсальный счет с тарифом 0 ₽ навсегда</h3>
+<strong>Озон Банк</strong> предлагает одни из самых лояльных условий на рынке РКО как для начинающего, так и для действующего бизнеса в сфере торговли, услуг или IT.
+<ul><li><strong>Тариф «Базовый»:</strong> 0 ₽ в месяц навсегда без требований к поддержанию оборота и без скрытых условий.</li><li><strong>Снятие наличных и переводы:</strong> Бесплатная бизнес-карта со снятием наличных до 3 000 000 ₽/мес. без комиссии. Переводы себе в любые банки через СБП — до 150 000 ₽/мес. под 0%.</li><li><strong>Платежи юрлицам:</strong> до 25 платежек в месяц бесплатно в любые банки РФ, далее от 49 ₽.</li><li><strong>Доход на остаток:</strong> до 13,77% годовых на накопительном счете для бизнеса и до 14,11% по депозитам с ежедневной выплатой.</li><li><strong>Кому подходит:</strong> Предпринимателям в рознице, услугах, e-commerce и IT, которым важны бесплатная онлайн-бухгалтерия, честный тариф 0 ₽ и легкий старт без визитов в банк.</li></ul>
+<h3>4. СберБанк — государственная надежность и крупнейшая сеть офисов</h3>
+<p>СберБанк (6-е место Markswebb, оценка 4.5) — крупнейший банк РФ с рекордной сетью отделений и банкоматов.</p>
+<ul><li><strong>Тарифные планы:</strong> «Легкий старт» — 0 ₽/мес. бессрочно без условий по оборотам (3 внешних платежки бесплатно). Платные пакеты «Набирая обороты» (1 290 ₽/мес., 15 платежей) и «Полным ходом» (3 990 ₽/мес., 50 платежей) подходят для стабильных оборотов.</li><li><strong>Вывод средств и эквайринг:</strong> Бесплатный перевод прибыли ИП на карту — до 300 000 ₽ в месяц. Торговый эквайринг — от 1,0% до 2,5% с интеграцией SberPay, интернет-эквайринг — от 1,8% до 2,5%.</li><li><strong>Плюсы:</strong> 100% государственная надежность, бессрочный бесплатный тариф, шаговая доступность банкоматов самоинкассации, безоговорочное доверие партнеров.</li><li><strong>Минусы:</strong> Дорогие платежки сверх лимита на «Легком старте» (199 ₽), строгие регламенты комплаенса.</li><li><strong>Для кого:</strong> Для классической розницы, строительных и транспортных предприятий, а также компаний с контрагентами в Сбере.</li></ul>
+<p>> <strong>Специальное предложение:</strong> Подключите тариф «Легкий старт» в Сбере за 0 ₽ навсегда и пользуйтесь крупнейшей расчетной сетью страны.
+> 
+> 👉 <a href="../index.html#rating">Открыть расчетный счет в СберБанке</a></p>
+<hr>
+<h3>5. ВТБ — абсолютный безлимит на вывод личного дохода ИП</h3>
+<p>Банк ВТБ (4-е место Markswebb, 67,5 балла, оценка 4.6), завершив интеграцию «Открытия», предложил рекордные условия вывода дохода ИП.</p>
+<ul><li><strong>Тарифные планы:</strong> «На старте» — 0 ₽ первые 3 месяца (далее бесплатно при обороте от 50 000 ₽/мес., 5 платежек включено). Пакеты «Самое важное» (1 200 ₽/мес., 25 платежей) и «Все включено» (2 200 ₽/мес., 60 платежей) снижают цену доп. платежек до 35–50 ₽.</li><li><strong>Вывод средств и эквайринг:</strong> Уникальное рыночное преимущество: <strong>0 ₽ БЕЗ ЛИМИТА на перевод дохода ИП на личные карты ВТБ</strong>. Никаких комиссий за вывод крупных сумм при соблюдении комплаенса. Эквайринг: торговый — 1,3%–2,3%, интернет — 1,9%–2,5%.</li><li><strong>Плюсы:</strong> Полный безлимит на вывод прибыли ИП на карту ВТБ, надежность госбанка №2 в РФ, 3 месяца промо-периода за 0 ₽, расширенная сеть офисов.</li><li><strong>Минусы:</strong> На тарифе «На старте» после 3 месяцев нужен оборот от 50 000 ₽; платежи вне пакета на старте стоят 150 ₽.</li><li><strong>Для кого:</strong> Для ИП с высоким личным доходом (от 500 000 до миллионов рублей), оптовиков и компаний, ориентированных на госбанки.</li></ul>
+<p>> <strong>Специальное предложение:</strong> Откройте счет в ВТБ и выводите чистую прибыль бизнеса на карту без комиссий и ограничений по суммам!
+> 
+> 👉 <a href="../index.html#rating">Открыть расчетный счет в ВТБ</a></p>
+<hr>
+<h3>6. УБРиР (Уральский банк) — 3 месяца за 0 ₽ и кэшбэк до 20% на АЗС</h3>
+<strong>УБРиР</strong> предлагает одну из самых выгодных промо-акций для бизнеса с регулярными расчетами и авторасходами.
+<ul><li><strong>Тариф «Взлетай!»:</strong> 3 месяца бесплатного обслуживания по акции «Бизнес на лайте». Включает 10 бесплатных платежек межбанк и вывод дохода физлицам в УБРиР до 400 000 ₽ под 0%.</li><li><strong>Тариф «Промо»:</strong> 0 ₽/мес навсегда без абонентской платы для бизнеса с минимальным числом операций.</li><li><strong>Скидка 50%:</strong> на тарифы «Бизнес-Класс» и «Премиум» при оплате за 6 или 12 месяцев.</li><li><strong>Кэшбэк на АЗС:</strong> рекордные до 20% рублями по бесплатной бизнес-карте за оплату топлива.</li><li><strong>Кому подходит:</strong> Предпринимателям в сфере услуг, оптовой торговли, грузоперевозчикам и всем, кому важен кэшбэк на бензин и льготный старт.</li></ul>
+<h3>7. ПСБ (Промсвязьбанк) — 2-е место в Markswebb и лидер интернет-торговли</h3>
+<p>ПСБ занял <strong>2-е место в рейтинге Markswebb с 92,0 баллами</strong> (оценка 4.8), сочетая передовой софт с надежностью госбанка.</p>
+<ul><li><strong>Тарифные планы:</strong> «ПСБ Старт» — 0 ₽/мес. при активности по счету (3 платежки бесплатно, далее 199 ₽). Тариф «Интернет-торговля» (1 000 ₽/мес.) и «24/7» (2 490 ₽/мес., 30 платежей включено, далее 50 ₽).</li><li><strong>Вывод средств и эквайринг:</strong> На тарифе «Интернет-торговля» действует рекордный лимит: <strong>бесплатный вывод до 1 000 000 ₽/мес. на карты физлиц при тарифе всего 1 000 ₽/мес.</strong> Эквайринг: торговый — от <strong>0,9%</strong> до 2,1%, интернет — от 1,6% до 2,3%.</li><li><strong>Плюсы:</strong> 2-е место в Markswebb, вывод до 1 млн ₽ без комиссии на доступном тарифе, минимальные ставки эквайринга, полное сопровождение госзакупок по 44-ФЗ и 223-ФЗ.</li><li><strong>Минусы:</strong> Дорогие платежки на стартовом тарифе вне пакета (199 ₽), условие активности на тарифе «Старт».</li><li><strong>Для кого:</strong> Для интернет-магазинов, участников электронных торгов, сферы госзаказа и тех, кто ищет надежный банк с передовым приложением.</li></ul>
+<p>> <strong>Специальное предложение:</strong> Откройте счет в ПСБ на тарифе «Интернет-торговля» и выводите до 1 000 000 ₽ без комиссии со ставками эквайринга от 0,9%!
+> 
+> 👉 <a href="../index.html#rating">Открыть расчетный счет в ПСБ</a></p>
+<hr>
+<h3>8. Банк Уралсиб — чемпион по дешевым межбанковским платежкам (всего 19 ₽)</h3>
+<p>Банк Уралсиб предлагает самые выгодные фиксированные тарифы на межбанковские переводы без необходимости переплачивать за дорогие премиальные пакеты.</p>
+<ul><li><strong>Тариф «Старт»:</strong> 0 ₽ в месяц, платежи в любые банки РФ — <strong>всего по 19 ₽ за платежку</strong> (самая низкая цена на рынке).</li><li><strong>Бизнес-карта и кэшбэк:</strong> кэшбэк до 7% на популярные бизнес-категории (АЗС, кафе, канцелярия, офисное ПО, билеты).</li><li><strong>Зарплатный проект:</strong> зачисление зарплаты от 0% всего за 1 000 ₽ в год с начислением 5% на минимальный остаток.</li><li><strong>Открытие по 1 документу:</strong> для ИП требуется только паспорт РФ, доступно дистанционное открытие.</li><li><strong>Для кого:</strong> Для торговых, строительных и сервисных компаний с десятками платежек поставщикам по всей стране.</li></ul>
+<p>> <strong>Специальное предложение:</strong> Откройте счет в Уралсибе и экономьте на каждой платежке контрагентам!
+> 
+> 👉 <a href="../index.html#rating">Открыть расчетный счет в Банке Уралсиб</a></p>
+<hr>
+<h3>9. Банк «Санкт-Петербург» (БСПБ) — лидер по ВЭД, выездному сервису и торговле</h3>
+<p>БСПБ — ведущий региональный банк для бизнеса с акцентом на международные расчеты и персональное обслуживание.</p>
+<ul><li><strong>Тариф «Деловой старт»:</strong> 0 ₽ первые месяцы обслуживания, бесплатный выпуск и обслуживание Бизнес-карты.</li><li><strong>Валютный контроль и ВЭД:</strong> сниженная ставка от 0.12%, прямые корреспондентские счета и персональный валютный контролер.</li><li><strong>География присутствия:</strong> заявки принимаются от юридических лиц и ИП в 4 ключевых регионах: <strong>Санкт-Петербург и Ленинградская область, Москва, Калининград, Новосибирск</strong>.</li><li><strong>Выездной сервис:</strong> оформление и подписание документов представителем банка на вашей территории без визита в офис.</li><li><strong>Для кого:</strong> Для импортеров, экспортеров, торговых компаний и бизнеса из СПб, Москвы, Калининграда и Новосибирска.</li></ul>
+<p>> <strong>Специальное предложение:</strong> Зарезервируйте счет в БСПБ онлайн и получите персонального консультанта по ВЭД!
+> 
+> 👉 <a href="../index.html#rating">Открыть расчетный счет в БСПБ</a></p>
+<hr>
+<h2>Какой банк выбрать в 2026–2027 году под ваш тип бизнеса</h2>
+<p>Сопоставьте специфику бизнеса с преимуществами банков:</p>
+<ul><li><strong>Микробизнес, самозанятые и фрилансеры:</strong></li><li><strong>Банк:</strong> <strong>Точка («Ноль»)</strong>, <strong>УБРиР («Бизнес-старт»)</strong> или <strong>СберБанк («Легкий старт»)</strong>.</li><li><strong>Причина:</strong> Бессрочный тариф 0 ₽ исключает затраты при отсутствии выручки.</li><li><strong>Селлеры маркетплейсов (Wildberries, Ozon, Яндекс Маркет):</strong></li><li><strong>Банк:</strong> <strong>Озон Банк</strong> или <strong>Точка</strong>.</li><li><strong>Причина:</strong> Озон Банк обеспечивает моментальный вывод выручки на Ozon Карту под 0% и до 14,1% на остаток, а Точка дает бесплатную онлайн-бухгалтерию и оборотного кредитования.</li><li><strong>Офлайн-ритейл, кафе, салоны красоты:</strong></li><li><strong>Банк:</strong> <strong>Альфа-Банк</strong>, <strong>ПСБ</strong> или <strong>СберБизнес</strong>.</li><li><strong>Причина:</strong> Низкие ставки торгового эквайринга (от 0,9%–0,99%) и СБП (0,4%–0,7%), а также привычные платежи через SberPay.</li><li><strong>Оптовая торговля и B2B компании:</strong></li><li><strong>Банк:</strong> <strong>Точка («Начало» за 700 ₽)</strong> или <strong>УБРиР или Уралсиб</strong>.</li><li><strong>Причина:</strong> Безлимитные межбанковские платежные поручения экономят от 5 000 до 20 000 ₽ ежемесячно.</li><li><strong>ИП с высоким чистым доходом (вывод от 500 000 до 2 000 000+ ₽/мес.):</strong></li><li><strong>Банк:</strong> <strong>ВТБ</strong> (0 ₽ без лимита на карту ВТБ) или <strong>Альфа-Банк</strong> (до 2 000 000 ₽/мес.).</li><li><strong>Причина:</strong> Исключение заградительных комиссий при переводе личной прибыли.</li><li><strong>Компании ООО и участники госзакупок:</strong></li><li><strong>Банк:</strong> <strong>Альфа-Банк</strong> (лучший ДБО для юридических лиц) или <strong>ПСБ</strong> (лидер по спецсчетам и банковским гарантиям).</li></ul>
+<hr>
+<h2>Часто задаваемые вопросы предпринимателей (FAQ)</h2>
+<h3>1. Можно ли открыть расчетный счет дистанционно без визита в банк?</h3>
+Да, все ТОП банков открывают счет онлайн. Заявка подается на сайте, реквизиты бронируются за 5–10 минут. Представитель банка приезжает для верификации, либо процедура проходит онлайн с КЭП.
+<h3>2. Сколько счетов может одновременно иметь ИП или ООО?</h3>
+Закон не ограничивает число счетов. Мультибанкинг — норма в 2026–2027 году: один банк используется для эквайринга (Точка, Озон Банк, СберБизнес), второй — для расчетов с партнерами, третий — для вывода дохода без комиссии (ВТБ).
+<h3>3. Как законно переводить деньги с расчетного счета ИП без блокировок по 115-ФЗ?</h3>
+Чистая прибыль ИП не облагается НДФЛ. Чтобы не вызвать вопросов финмониторинга:
+<em> Назначение платежа: </em>«Перевод собственных средств ИП на личные нужды. Без НДС»*;
+* Переводите деньги строго на свою дебетовую карту;
+* Избегайте обналичивания — рассчитывайтесь картой безналично;
+* Платите налоги с расчетного счета (нагрузка от 1% от оборота).
+<h3>4. Какие скрытые комиссии чаще всего встречаются в тарифах РКО?</h3>
+Проверяйте плату за неактивность счета (до 3 000 ₽/мес.), SMS-информирование (до 299 ₽/мес.), комиссию за банкоматы (до 1%) и тариф сверх лимита вывода средств.
+<h3>5. Как избежать попадания в красную зону платформы «Знай своего клиента» (ЗСК)?</h3>
+ЦБ РФ делит бизнес по уровням риска («светофор»). Чтобы быть в «зеленой зоне», платите налоги с расчетного счета, проверяйте партнеров, избегайте транзита и храните закрывающие документы.
+<hr>
+<h2>Итоговая рекомендация и вердикт</h2>
+<p>В 2026 году на рынке РКО каждый банк предлагает четкую специализацию:</p>
+<ul><li><strong><a href="../index.html#rating">Альфа-Банк</a></strong> — выбор для технологичного бизнеса, торгового эквайринга от 1% и вывода прибыли до 2 000 000 ₽.</li><li><strong><a href="../index.html#rating">Банк Точка</a></strong> — эталон сервиса с бесплатным безлимитным межбанком и встроенной бухгалтерией.</li><li><strong><a href="../index.html#rating">Озон Банк</a></strong> — лидер для маркетплейсов, e-commerce, дохода до 14,1% на остаток и снятия наличных до 3 млн ₽.</li><li><strong><a href="../index.html#rating">ВТБ</a></strong> — абсолютный чемпион по выводу прибыли ИП (0 ₽ без лимита на карту ВТБ) и онлайн-регистрации бизнеса с ЭДО на 1 год.</li><li><strong><a href="../index.html#rating">Банк Уралсиб</a></strong> — лучшие фиксированные тарифы на межбанк (всего 19 ₽) и кэшбэк до 7%.</li><li><strong><a href="../index.html#rating">УБРиР</a></strong> — 3 месяца РКО за 0 ₽ на тарифе «Взлетай!», кэшбэк на АЗС до 20% и 15 платежек бесплатно.</li><li><strong><a href="../index.html#rating">СберБизнес</a></strong> — надежность №1 и рекордный лимит вывода до 300 000 ₽ под 0% (для бизнеса от 30 дней в ФНС).</li><li><strong><a href="../index.html#rating">ПСБ</a></strong> — опора госзакупок по 44/223-ФЗ, эквайринг от 0,9% в Белом списке Минцифры и переводы до 10 млн ₽.</li><li><strong><a href="../index.html#rating">Банк «Санкт-Петербург» (БСПБ)</a></strong> — персональный ВЭД от 0.12% и выездной сервис в СПб, Москве, Калининграде и Новосибирске.</li></ul>
+<p>Оцените объем платежей, ставки эквайринга и выбирайте банк по ссылкам выше, чтобы открыть расчетный счет на лучших условиях!</p>
+            </article>
+            
+            <div class="cta-banner">
+                <h4>Нужна помощь в выборе расчетного счета?</h4>
+                <p style="color: #697077; margin-bottom: 16px;">Рассчитайте точную экономию на калькуляторе или перейдите к рейтингу лучших банков.</p>
+                <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                    <a href="../index.html#calculator" class="btn-open-account">Калькулятор экономии РКО →</a>
+                    <a href="../index.html#rating" class="btn-details">Рейтинг банков 2026–2027 ★</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <span class="logo-badge">РКО 2026–2027</span>
+                        <span class="logo-text">Навигатор Бизнеса</span>
+                    </a>
+                    <p class="footer-desc">
+                        Независимый аналитический портал и экспертный сервис объективного сравнения тарифов расчетно-кассового обслуживания (РКО) для ИП и ООО.
+                    </p>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer-email-box">
+                        <span class="footer-email-label">Почта для связи:</span>
+                        <a href="mailto:y.sevelev@mail.ru" class="footer-email-val">y.sevelev@mail.ru</a>
+                    </div>
+                    <div class="footer-social-links">
+                        <a href="https://t.me/fin_konsult_2026" class="link-tg-channel" target="_blank" rel="noopener">Telegram-канал 📢</a>
+                        <a href="../index.html#rating">Рейтинг банков</a>
+                        <a href="../index.html#calculator">Калькулятор тарифа</a>
+                        <a href="../index.html#consultation">Бесплатная консультация</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-disclaimer">
+                Внимание: Настоящий интернет-сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437 ГК РФ. Сайт не оказывает банковских или финансовых услуг, не является банком, кредитной или финансовой организацией. Все финансовые услуги оказываются непосредственно банками-партнерами.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
