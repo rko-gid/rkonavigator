@@ -43,7 +43,7 @@ const RKO_CONFIG = {
             partnerUrl: "https://t.fincpanetwork.ru/click/61172/338?erid=2W5zFJhpPwv",
             partnerRegUrl: "https://t.fincpanetwork.ru/click/61172/337?erid=2W5zFJerRPE",
             partnerAcquiringUrl: "https://leads.su/click/demo_alfa_acquiring",
-            partnerInternetAcquiringUrl: "https://leads.su/click/demo_alfa_internet_acquiring", // Ссылка на интернет-эквайринг Альфа-Банка
+            partnerInternetAcquiringUrl: "https://t.fincpanetwork.ru/click/61172/413?erid=2W5zFGtZcRN", // Ссылка на интернет-эквайринг Альфа-Банка
             bonusText: "Торговый эквайринг 1% + 0 ₽ аренда терминалов и до 300 000 ₽ партнерских бонусов",
             monthlyFee: "0 ₽ навсегда без условий",
             limitFreeCash: "До 100 000 ₽ / мес 0%",
